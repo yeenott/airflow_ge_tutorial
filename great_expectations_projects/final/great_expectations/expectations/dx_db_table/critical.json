@@ -1,0 +1,27 @@
+{
+  "data_asset_type": "Dataset",
+  "expectation_suite_name": "dx_db_table.critical",
+  "expectations": [
+    {
+      "expectation_type": "expect_table_column_count_to_equal",
+      "kwargs": {
+        "value": 3
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_table_columns_to_match_ordered_list",
+      "kwargs": {
+        "column_list": [
+          "pt_id",
+          "dos",
+          "dx_code"
+        ]
+      },
+      "meta": {}
+    }
+  ],
+  "meta": {
+    "great_expectations.__version__": "0.9.2"
+  }
+}
